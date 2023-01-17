@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_designs/screens/screens.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -12,11 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
+      title: 'Designs app',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Text("hello"),
+      home: const HeadersPage(),
     );
   }
 }
